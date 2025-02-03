@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&y);
     scanf("%d",&z);
     float avg = (x+y+z)/3;
-    printf("Average: %f",avg);
+    printf("Average: %0.2f",avg);
 
     return 0;
 }
