@@ -1,17 +1,10 @@
 #include <stdio.h>
-unsigned int toggleNthBit(unsigned int num,int n){
-    return num^(1 << n);
-}
 int main(){
-    unsigned int num;
-    int n;
+    int n,num;
+    scanf("%d %d",n,num);
+    n^=(1<<n);
+    printf("%d",n);
 
-    scanf("%u",&num);
-    scanf("%d",&n);
-    unsignd int result = toggleNthBit(num,n);
-    printf("%u\n",num);
-    printf("%u\n",n,result)
-
-return 0;
+    return 0;
 }
 
