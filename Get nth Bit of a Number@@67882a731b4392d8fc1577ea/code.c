@@ -7,10 +7,10 @@ int main(){
     int mask  = 1<<n ;
     int bitvalue = a&mask;
     if(bitvalue != 0){
-        printf("%d",n);
+        printf("%d",1);
     }
     else{
-        printf("%d",n);
+        printf("%d",0);
     }
 
 
