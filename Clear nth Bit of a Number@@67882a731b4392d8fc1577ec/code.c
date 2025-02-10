@@ -1,10 +1,8 @@
 #include <stdio.h>
 int main(){
-    int num,n ;
-    scanf("%d %d",&num,&n);
-    int mask = ~(1<<num);
-    int newnum =num&mask;
+    int n,nth;
+    scanf("%d %d",&n,&nth);
+    int lsb=~(1<<nth);
+    int newnum=n&lsb;
     printf("%d",newnum);
-
-    return 0;
 }
