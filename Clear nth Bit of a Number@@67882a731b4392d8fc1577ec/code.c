@@ -1,9 +1,7 @@
 #include <stdio.h>
 int main(){
-    int num ;
-    scanf("%d",&num);
-    int n;
-    scanf("%d",&n);
+    int num,n ;
+    scanf("%d %d",&num,&n);
     int mask = ~(1<<num);
     int newnum =num&mask;
     printf("%d",newnum);
