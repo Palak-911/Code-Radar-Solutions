@@ -3,34 +3,23 @@
 int main() {
     int n;
     scanf("%d", &n);
-
-    // Top half of the diamond
-    for (int i = 1; i <= n; i++) {
-        // Print leading spaces
-        for (int j = 1; j <= n - i; j++) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
             printf(" ");
         }
-        // Print stars
-        for (int j = 1; j <= (2 * i - 1); j++) {
-            printf("*");
+        for(int k=1;k<=(2*n-1);k++){
+            printf("* ");
         }
-        // Move to the next line after each row
-        printf("\n");
-    }
-
-    // Bottom half of the diamond
-    for (int i = n - 1; i >= 1; i--) {
-        // Print leading spaces
-        for (int j = 1; j <= n - i; j++) {
+    for(int i=n-1;i<=1;i--){
+        for(int j=1;j<=n-1;j++){
             printf(" ");
         }
-        // Print stars
-        for (int j = 1; j <= (2 * i - 1); j++) {
-            printf("*");
+        for(int k=1;k<=(2*n-1);k++){
+            printf("* ");
         }
-        // Move to the next line after each row
-        printf("\n");
     }
+    printf("\n");
 
+    }
     return 0;
 }
