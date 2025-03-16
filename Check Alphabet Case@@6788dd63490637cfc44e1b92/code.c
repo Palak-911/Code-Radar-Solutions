@@ -8,9 +8,5 @@ int main(){
     else if(ch>=97 && ch<=122){
         printf("Lowercase");
     }
-    else{
-        printf("no");
-    }
-
     return 0;
 }
