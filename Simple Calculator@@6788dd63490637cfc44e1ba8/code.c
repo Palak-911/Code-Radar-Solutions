@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int a,b,o;
+    int a,b,o,c,d,e,f;
     scanf("%d %d %d",&a,&b,&o);
     a+b=c;
     a-b=d;
