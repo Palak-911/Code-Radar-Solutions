@@ -6,9 +6,9 @@ int main(){
     a-b==d;
     a/b==e;
     a*b==f;
-    if(o==+)printf("%d",c);
-    else if(o==-)printf("%d",d);
-    else if(o==*)printf("%d",f);
+    if(o=='+')printf("%d",c);
+    else if(o=='-')printf("%d",d);
+    else if(o=='*')printf("%d",f);
     else printf("%d",e);
     return 0;
 }
