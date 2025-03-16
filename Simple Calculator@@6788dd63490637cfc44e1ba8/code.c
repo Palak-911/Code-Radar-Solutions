@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     int a,b,o;
-    scanf("%d %d %d",&a,&b,&c);
+    scanf("%d %d %d",&a,&b,&o);
     a+b=c;
     a-b=d;
     a/b=e;
