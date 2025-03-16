@@ -1,16 +1,35 @@
 #include<stdio.h>
-int main(){
+
+int main() {
     int month;
-    scanf("%d",&month);
-    if(month ==1,3,5,7,8,10,12){
-        printf("31");
+
+    // Take input for the month number
+    scanf("%d", &month);
+
+    // Display the number of days based on the month number
+    switch(month) {
+        case 1:  // January
+        case 3:  // March
+        case 5:  // May
+        case 7:  // July
+        case 8:  // August
+        case 10: // October
+        case 12: // December
+            printf("31 ");
+            break;
+        case 4:  // April
+        case 6:  // June
+        case 9:  // September
+        case 11: // November
+            printf("30 ");
+            break;
+        case 2:  // February (Assumed to have 28 days)
+            printf("28 ");
+            break;
+        default:
+            printf("Invalid month");
+            break;
     }
-    else if(month == 4,6,9,11){
-        printf("30");
-    }
-    else if(month = 2){
-        printf("28");
-    }
-    else printf("Invalid month");
+
     return 0;
 }
