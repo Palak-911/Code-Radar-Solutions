@@ -2,6 +2,7 @@
 int main(){
     int a,b;
     char o;
+    scanf("%d %d %d",&a,&b,&c);
     if(o=='+'){
         printf("%d",a+b);
     }
