@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 // Function to check if a number is prime or not
 int primenotprime(int n) {
@@ -16,12 +16,12 @@ int primenotprime(int n) {
 }
 
 int main() {
-    int n, result;
+    int n;
     
-    // Loop to take multiple inputs
-    while (scanf("%d", &n) == 1) {  // Keep reading numbers until the input is not valid
-        result = primenotprime(n);  // Check if the number is prime
-        printf("%d\n", result);  // Print the result: 1 for prime, 0 for not prime
+    // Take multiple inputs and check if each number is prime
+    while (scanf("%d", &n) == 1) {
+        int result = primenotprime(n);  // Check if the number is prime
+        printf("%d\n", result);  // Print 1 for prime, 0 for not prime
     }
 
     return 0;
