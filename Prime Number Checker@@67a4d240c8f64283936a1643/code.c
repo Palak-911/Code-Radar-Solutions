@@ -11,7 +11,7 @@ int primenotprime(int n){
             }
         }
     }
-    return;
+    return 0;
 }
 int main(){
     int n;
