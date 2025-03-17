@@ -4,11 +4,12 @@ int main(){
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
         for(int j=1;j<=i;j++){
-            if(j%2==0){
-                printf("0");
+            int c=i+j;
+            if(c%2==0){
+                printf("1 ");
             }
             else{
-                printf("1");
+                printf("0 ");
             }
         }
         printf("\n");
