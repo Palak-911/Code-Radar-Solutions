@@ -37,7 +37,7 @@ int main() {
     
     int result[200000];
     // Call trackplayerranks function
-    trackplayerranks(ranked[], n, player[], m, result);
+    trackplayerranks(ranked[], n, player[], m, result[]);
 
     // Output rank after each game
     for (int i = 0; i < m; i++) {
