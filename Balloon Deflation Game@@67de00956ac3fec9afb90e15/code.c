@@ -20,5 +20,5 @@ int main(){
         }
     }
     arr[i]=arr[i]-min;
-    return0;
+    return 0;
 }
