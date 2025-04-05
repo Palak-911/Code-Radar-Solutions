@@ -15,8 +15,8 @@ int selectionSort(char arr[],int n){
     }
 }
 
-input:
-3
-z a m
-output:
-a m z
+// input:
+// 3
+// z a m
+// output:
+// a m z
