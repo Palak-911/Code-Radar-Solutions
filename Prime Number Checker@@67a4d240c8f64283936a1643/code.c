@@ -1,5 +1,5 @@
 int isprime(int num){
-    int is_prime=1;
+    
     if(num<=1){
         return 0;
     }
