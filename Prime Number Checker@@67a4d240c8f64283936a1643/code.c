@@ -1,5 +1,4 @@
 int isprime(int num){
-    
     if(num<=1){
         return 0;
     }
@@ -7,9 +6,7 @@ int isprime(int num){
         if(num%i==0){
             return 0;
         }
-        else{
-            return 1;
-        }
+        
     }
-    
+    return 1;
 }
