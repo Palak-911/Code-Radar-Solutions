@@ -1,4 +1,3 @@
-#include<stdio.h>
 
 int findUnsortedSubarray(int arr[], int n) {
     int left = -1, right = -1;
@@ -43,19 +42,4 @@ int findUnsortedSubarray(int arr[], int n) {
 
     // Step 6: Return the length of the subarray
     return right - left + 1;
-}
-
-int main() {
-    int t;
-    scanf("%d", &t);
-    while (t--) {
-        int n;
-        scanf("%d", &n);
-        int arr[10000];
-        for (int i = 0; i < n; i++) {
-            scanf("%d", &arr[i]);
-        }
-        printf("%d\n", findUnsortedSubarray(arr, n));
-    }
-    return 0;
 }
