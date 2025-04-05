@@ -1,14 +1,27 @@
-int findUnsortedSubarray(int arr[],int n){
-    int sum=0;
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-                sum++;
-            }
+int findUnsortedSubarray(int arr[], int n) {
+    int left = -1, right = -1;
+    
+    // Find the left boundary where the array becomes unsorted
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            left = i;
+            break;
         }
     }
-    printf("%d",sum);
+    
+    // Find the right boundary where the array becomes unsorted
+    for (int i = n - 1; i > 0; i--) {
+        if (arr[i] < arr[i - 1]) {
+            right = i;
+            break;
+        }
+    }
+    
+    // If no unsorted subarray is found, the array is already sorted
+    if (left == -1 || right == -1) {
+        return 0;
+    }
+    
+    // Return the length of the subarray to sort
+    return right - left + 1;
 }
